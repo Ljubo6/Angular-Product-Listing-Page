@@ -1,6 +1,7 @@
 # Deploy on Firebase
  
 https://angilar-product-listing-page.web.app/
+
 https://angilar-product-listing-page.firebaseapp.com/
 
 # AngularPLP
