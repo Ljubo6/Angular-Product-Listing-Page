@@ -1,0 +1,65 @@
+.header-top{
+  background-color:#ee6e73 ;
+  position: relative;
+}
+.header-top a{
+  color: #fff;
+}
+.header-top a:hover{
+  color: #000;
+}
+.header-top .icons a{
+  padding: 10px;
+}
+.header-top .icons a,
+.icon-phone{
+  font-size: 18px;
+}
+.open-cart-modal{
+  position: relative;
+}
+.header-top .count-items{
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 10px;
+}
+.modal-header{
+  background-color: #ee6e73;
+  color: #fff;
+}
+.modal-body img{
+  max-width: 100px;
+}
+.modal-body a{
+  color: #ee6e73;
+}
+
+li a.dropdown-item{
+  color: #000;
+}
+a.dropdown-item:focus,
+a.dropdown-item:hover{
+  background-color: #ee6e73;
+  color: #fff;
+}
+.active{
+  color: #ee6e73;
+  font-weight: bold;
+  background-color: #ee6e73;
+  border-radius: 7px;
+}
+
+@media only screen and (max-width: 420px){
+  .header-top .icons a {
+    padding: 5px;
+  }
+  .header-top .icons a, .icon-phone{
+    font-size: 16px;
+  }
+  .modal-body img{
+    max-width: 50px;
+  }
+}
+
+

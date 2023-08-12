@@ -1,0 +1,16 @@
+<div class="row" *ngIf="displayedProducts.length > 0;else empty">
+  <app-input-group  [numberOfProducts]="displayedProducts.length" [category]="category | titlecase"></app-input-group>
+  <app-product class=" col-md-4 col-sm-6 mb-3" *ngFor="let product of displayedProducts" [product]="product"></app-product>
+  <div class="d-flex justify-content-center">
+    <button class="btn btn-lg btn-primary mt-3 mb-3 position-relative" (click)="loadMore()" [disabled]="noMoreProducts">
+          <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+              {{displayedProducts.length}}
+            <span class="visually-hidden">messages</span>
+          </span>
+      Load More
+    </button>
+  </div>
+</div>
+<ng-template #empty>
+  <h2 class="text-center">No products found</h2>
+</ng-template>

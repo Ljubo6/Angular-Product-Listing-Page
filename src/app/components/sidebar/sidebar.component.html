@@ -1,0 +1,25 @@
+<div class="sidebar-toggler mb-2">
+  <button class="btn btn-light" (click)="isDisplay = !isDisplay" type="button">Filter <i class="fa-solid fa-circle-chevron-down"></i></button>
+</div>
+<div class="sidebar-toggle" [ngStyle]="{display: isDisplay ? 'block' : 'none'}">
+  <h5>Filter by:</h5>
+  <select #priceSelect class="form-select form-select-sm mb-3"
+          aria-label=".form-select-sm example"
+          (change)="onPriceFilterChange($event)"
+  >
+    <option value="0">Price</option>
+    <option value="100">up to $100</option>
+    <option value="200">up to $200</option>
+    <option value="300">up to $300</option>
+    <option value="1000">up to $1000</option>
+  </select>
+  <select #brandSelect class="form-select form-select-sm mb-3"
+          aria-label=".form-select-sm example"
+          (change)="onBrandFilterChange($event)"
+  >
+    <option value="0">Brands</option>
+    <option value="1">One</option>
+    <option value="2">Two</option>
+    <option value="3">Three</option>
+  </select>
+</div>

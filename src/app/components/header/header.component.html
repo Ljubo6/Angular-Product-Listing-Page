@@ -1,0 +1,61 @@
+<header class="sticky-top">
+  <div class="header-bottom">
+    <nav class="navbar navbar-expand-lg navbar-nav bg-light">
+      <div class="container-fluid">
+        <div class="d-inline-flex">
+          <h2><a [routerLink]="['/electronics']"  class="navbar-brand">Online Shop</a></h2>
+          <a class="navbar-brand fs-2 fw-bold "  [routerLink]="['/electronics']">
+            <i class="fa-brands fa-angular fs-2" style="color: #f54242;"></i>
+          </a>
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav text-center ms-auto mb-2 mb-lg-0">
+              <li class="nav-item"  >
+                <a   [routerLink]="['/electronics']" routerLinkActive="active"  class="nav-link">Electronics</a>
+              </li>
+              <li class="nav-item" >
+                <a   [routerLink]="['/jewelery']"  routerLinkActive="active"  class="nav-link">Jewelery</a>
+              </li>
+              <li class="nav-item">
+                <a  [routerLink]="['/men-clothes']" routerLinkActive="active" class="nav-link">Men's clothing</a>
+              </li>
+              <li class="nav-item" >
+                <a  [routerLink]="['/women-clothes']" routerLinkActive="active" class="nav-link">Women's clothing</a>
+              </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+</header>
+<div class="header-top py-3 px-0">
+  <div class="container">
+    <div class="row justify-content-between">
+      <div class="col">
+        <a><span class="icon-phone">&#9743;</span>555 123-45-67</a>
+
+      </div>
+      <div class="col icons text-end">
+
+        <a data-bs-toggle="modal" data-bs-target="#cart-modal" class="open-cart-modal">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <span class="badge bg-danger rounded-pill count-items">{{cartItemsCount}}</span>
+        </a>
+        <app-cart-modal></app-cart-modal>
+
+
+        <div class="dropdown d-inline-block">
+          <a  class="dropdown-toggle" data-bs-toggle="dropdown"><i class="fa-regular fa-user"></i></a>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <li><a class="dropdown-item">Login</a></li>
+            <li><a class="dropdown-item">Register</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>

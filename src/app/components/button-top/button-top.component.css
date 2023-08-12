@@ -1,0 +1,18 @@
+#top{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #6e060b;
+  color: #fff;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  font-size: 25px;
+  border: 0;
+  opacity: .5;
+  z-index: 10;
+}
+#top:hover{
+  opacity: 1;
+  transition: all 0.5s;
+}

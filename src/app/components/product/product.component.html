@@ -1,0 +1,24 @@
+<div class="product-card">
+  <div class="product-thumb">
+    <a ><img class="mw-100 mh-100" [src]="product.image" [alt]="product.title"></a>
+  </div>
+  <div class="product-details">
+    <h6 class="text-center">Brand: {{product.brand}}</h6>
+    <h6 class="text-center"><a  class="text-decoration-none text-dark">{{product.title}}</a></h6>
+
+    <p>{{product.description}}</p>
+
+    <div class="d-flex justify-content-center">
+      <app-rating [rating]="product.rating.rate"></app-rating>
+    </div>
+    <div class="product-bottom-details d-flex justify-content-between">
+      <div class="product-price">
+        <small>${{product.price}}</small>
+        ${{(product.price * 0.8) | number:'.1-2'}}
+      </div>
+      <div class="product-links">
+        <a (click)="addProduct(product)"> <i class="fa-solid fa-cart-shopping"></i></a>
+      </div>
+    </div>
+  </div>
+</div>

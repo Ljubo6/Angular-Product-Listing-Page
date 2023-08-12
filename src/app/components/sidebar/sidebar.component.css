@@ -1,0 +1,20 @@
+.sidebar-toggler .btn{
+  width: 100%;
+}
+.sidebar-toggle{
+  display: none;
+}
+.list-group-item.active{
+  background-color: #ee6e73;
+  border-color: #ee6e73;
+}
+
+@media all and (min-width: 992px) {
+  .sidebar-toggler{
+    display: none;
+  }
+  .sidebar-toggle{
+    display: block !important;
+  }
+}
+

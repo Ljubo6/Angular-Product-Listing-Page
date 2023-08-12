@@ -1,0 +1,24 @@
+<div class="row d-flex justify-content-between">
+  <div class="col-md-8">
+    <div class="input-group mb-3 border border-1 rounded d-flex align-middle">
+      <h5 class="w-100 text-center m-0 p-1">
+        {{category}}
+        <span class="badge bg-secondary">Currently showed: {{numberOfProducts}}</span>
+      </h5>
+
+    </div>
+  </div>
+
+  <div class="col-md-4">
+    <div class="input-group mb-3 ">
+      <label class="input-group-text" for="input-sort">Sort by:</label>
+      <select class="form-select" id="input-sort" (change)="onSelectChange($event)">
+        <option selected value="0">Sorting methods</option>
+        <option value="1">Alphabetical a-z</option>
+        <option value="2">Alphabetical z-a</option>
+        <option value="3">Price ascending</option>
+        <option value="4">Price descending</option>
+      </select>
+    </div>
+  </div>
+</div>
